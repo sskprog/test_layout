@@ -1,3 +1,26 @@
+/* Fonts */
+@font-face {
+    font-weight: 400;
+    font-family: Inter;
+    src: url("../fonts/Inter-Regular.ttf");
+  }
+  @font-face {
+    font-weight: 500;
+    font-family: Inter;
+    src: url("../fonts/Inter-Medium.ttf");
+  }
+  @font-face {
+    font-weight: 600;
+    font-family: Inter;
+    src: url("../fonts/Inter-SemiBold.ttf");
+  }
+  @font-face {
+    font-weight: 700;
+    font-family: Inter;
+    src: url("../fonts/Inter-Bold.ttf");
+  }
+
+/* Default styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,6 +50,10 @@ html {
 }
 body {
     line-height: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #29374E;
+    font-size: 16px;
 }
 ol, ul {
     list-style: none;
