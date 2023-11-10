@@ -70,6 +70,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+.container {
+    max-width: 1440px;
+    padding: 0 60px 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* header */
 
@@ -82,16 +88,27 @@ header > .container {
     background-position: right center;
     min-height: 678px;
 }
-.container {
-    max-width: 1440px;
-    padding: 0 60px 0 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container:after {
+
+header > .container:after {
     content: "";
     display: inline-block;
     background-image: url(/img/hand-bg.png);
     background-repeat: no-repeat;
     position: relative;
+}
+.lang_select {
+    font-size: 0.875rem;
+    float: right;
+    margin-top: 22px;
+    margin-right: 5px;
+}
+.lang_select > a {
+    padding: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+.lang_select > a.active, .lang_select > a:hover {
+    color: #0962E8;
+    background-color: #fff;
+    border-radius: 50%;
 }
