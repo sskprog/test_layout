@@ -81,6 +81,7 @@ table {
 
 header {
     background-color: #CBECFF;
+    padding-top: 22px;
 }
 header > .container {
     background-image: url(/img/hand-bg.png);
@@ -98,17 +99,29 @@ header > .container:after {
 }
 .lang_select {
     font-size: 0.875rem;
-    float: right;
-    margin-top: 22px;
     margin-right: 5px;
+    display: flex;
+    justify-content: right;
 }
 .lang_select > a {
-    padding: 4px;
+    width: 26px;
+    height: 26px;
     text-decoration: none;
+    border-radius: 50%;
     color: inherit;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .lang_select > a.active, .lang_select > a:hover {
     color: #0962E8;
     background-color: #fff;
-    border-radius: 50%;
+}
+.promo {
+    line-height: 130%;
+    margin-top: 122px;
+}
+.promo > h1 {
+    font-weight: 700;
+    font-size: 4rem;
 }
