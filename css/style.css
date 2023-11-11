@@ -188,3 +188,17 @@ header > .container:after {
     top: 18px;
     background-color: #EFF9FF;
 }
+/* Section content  */
+.product_header {
+    margin-top: 142px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.375rem;
+}
+.product_header > h1 {
+    height: 2.375rem;
+}
+.product_header > h1 > span{
+    color: #0962E8;
+}
+
