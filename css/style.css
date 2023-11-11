@@ -71,7 +71,7 @@ table {
     border-spacing: 0;
 }
 .container {
-    max-width: 1440px;
+    max-width: 1024px;
     padding: 0 60px 0 60px;
     margin-left: auto;
     margin-right: auto;
@@ -225,6 +225,7 @@ header > .container:after {
     margin-top: 12px;
 }
 .platform_card img {
+    margin-left: 23px;
     border-radius: 20px 20px 0 0;
     box-shadow: 8px -8px 16px rgba(0, 0, 0, 0.06);
 }
