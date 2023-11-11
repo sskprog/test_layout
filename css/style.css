@@ -155,3 +155,36 @@ header > .container:after {
 .promo > a {
     margin-top: 38px;
 }
+.panel {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 20px;
+    position: relative;
+    top: 233px;
+}
+.feature_card {
+    position: relative;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: 500;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+}
+.feature_card > i {
+    color: #0962E8;
+    position: absolute;
+    right: 23px;
+    top: 26px;
+    font-size: 1.5rem;
+}
+.icon_wrap {
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    right: 15px;
+    top: 18px;
+    background-color: #EFF9FF;
+}
