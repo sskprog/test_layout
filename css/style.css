@@ -246,7 +246,7 @@ header>.container {
 }
 
 .company_name::before {
-    content: url('../img/finkit.png');
+    content: url(../img/finkit.png);
 }
 
 .panel {
@@ -323,9 +323,9 @@ section.content {
 }
 
 .platform_card img {
-    width: 142px;
+    max-width: 142px;
     margin-left: 10px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     box-shadow: 8px -8px 16px rgba(0, 0, 0, 0.06);
 }
 
@@ -409,14 +409,14 @@ section.content {
 
     header>.container {
         min-height: 678px;
-        background-image: url(/img/hand-bg.png);
+        background-image: url(/img/hand.png);
         background-position: right center;
     }
 
     header>.container:after {
         content: "";
         display: inline-block;
-        background-image: url(/img/hand-bg.png);
+        background-image: url(/img/hand.png);
         background-repeat: no-repeat;
         position: relative;
     }
@@ -505,7 +505,7 @@ section.content {
     }
 
     .platform_card img {
-        width: 218px;
+        max-width: 218px;
         margin-left: 23px;
     }
 
