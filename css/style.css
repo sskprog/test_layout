@@ -204,7 +204,6 @@ header {
     background-color: #CBECFF;
     padding-top: 22px;
     padding-bottom: 33px;
-
 }
 
 header>.container {
@@ -212,8 +211,6 @@ header>.container {
     background-repeat: no-repeat;
     background-position: right top;
 }
-
-
 
 .lang_select {
     font-size: 0.875rem;
@@ -294,7 +291,42 @@ section.content {
 
 .container>h1 {
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
+.platform {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 16px;
+}
+
+.platform_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #E9F6FF;
+    padding: 25px 20px 0 16px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.platform_card h2 {
+    font-weight: 600;
+}
+
+.platform_card p {
+    font-size: 0.8125rem;
+    margin-top: 4px;
+}
+
+.platform_card img {
+    width: 142px;
+    margin-left: 10px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 8px -8px 16px rgba(0, 0, 0, 0.06);
+}
+
 
 /* for desctop */
 
@@ -305,6 +337,9 @@ section.content {
     }
 
     /* header */
+    header {
+        padding-bottom: 0;
+    }
 
     header>.container {
         min-height: 678px;
@@ -357,7 +392,7 @@ section.content {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         position: relative;
-        top: 220px;
+        top: 272px;
     }
 
     .feature_card {
@@ -380,23 +415,16 @@ section.content {
     section.content {
         padding-top: 142px;
     }
+    .container>h1 {
+        text-align: center;
+        font-size: 2.375rem;
+        font-weight: 600;
+    }
 
     .platform {
         margin-top: 44px;
-        display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 20px;
-    }
-
-    .platform_card {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        background-color: #E9F6FF;
-        padding: 37px 33px 0 20px;
-        border: 1px solid transparent;
-        border-radius: 30px;
-        margin-bottom: 120px;
     }
 
     .platform_card h2 {
@@ -410,9 +438,8 @@ section.content {
     }
 
     .platform_card img {
+        width: 218px;
         margin-left: 23px;
-        border-radius: 20px 20px 0 0;
-        box-shadow: 8px -8px 16px rgba(0, 0, 0, 0.06);
     }
 
     .value {
@@ -420,6 +447,7 @@ section.content {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         column-gap: 19px;
         row-gap: 21px;
+        margin-top: 120px;
     }
 
     .value>.value_info {
