@@ -191,7 +191,7 @@ h1>span {
     background-color: #0962E8;
 }
 
-/* For mobile */
+/* For extra small devicies */
 
 .container {
     max-width: 1024px;
@@ -199,6 +199,8 @@ h1>span {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* header */
 
 header {
     background-color: #CBECFF;
@@ -286,6 +288,8 @@ header>.container {
     background-color: #EFF9FF;
 }
 
+ /* Section content  */
+
 section.content {
     padding-top: 40px;
 }
@@ -359,6 +363,7 @@ section.content {
     text-align: center;
     font-size: 0.875rem;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .value_card {
@@ -393,13 +398,222 @@ section.content {
     top: -5px;
 }
 
+/* for small devicies */
 
-/* for desctop */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
 
-@media only screen and (min-width: 1023px) {
+/* for medium devicies */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        padding: 0 60px;
+    }
+    .promo {
+        margin-top: 300px;
+    }
+
+    .feature_card {
+        padding: 20px;
+    }
+
+    .feature_card>i {
+        right: 24px;
+        left: auto;
+        top: 27px;
+    }
+
+    .icon_wrap {
+        right: 15px;
+        left: auto;
+        top: 18px;
+    }
+    .platform_card img {
+        max-width: 218px;
+        margin-left: 23px;
+    }
+}
+
+/* for tablet */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
 
     .container {
-        padding: 0 60px 0 60px;
+        padding: 0 30px;
+    }
+
+    /* header */
+    header {
+        padding-bottom: 0;
+    }
+
+    header>.container {
+        min-height: 678px;
+        background-image: url(/img/hand.png);
+        background-position: right center;
+    }
+
+    header>.container:after {
+        content: "";
+        display: inline-block;
+        background-image: url(/img/hand.png);
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .promo {
+        display: block;
+        margin-top: 78px;
+        max-width: 350px;
+    }
+
+    .company_name {
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    .company_name::before {
+        content: "Fin";
+    }
+
+    .company_name::after {
+        padding: 2px 15px;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #0962E8;
+        content: "Kit";
+    }
+
+    .promo>p {
+        margin-top: 14px;
+        font-size: 1.375rem;
+        line-height: 1.3;
+    }
+
+    .promo>a {
+        margin-top: 38px;
+    }
+
+    .panel {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        position: relative;
+        top: 272px;
+    }
+
+    .feature_card {
+        position: relative;
+        padding: 42px 20px 20px 20px;
+    }
+
+    .feature_card>i {
+        color: #0962E8;
+        position: absolute;
+        left: 27px;
+        top: 4px;
+        font-size: 1.5rem;
+    }
+
+    .icon_wrap {
+        position: absolute;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        left: 18px;
+        top: -5px;
+        background-color: #EFF9FF;
+    }
+
+    /* Section content  */
+
+    section.content {
+        padding-top: 142px;
+    }
+
+    .container>h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .platform {
+        margin-top: 44px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px;
+    }
+
+    .platform_card h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .platform_card p {
+        font-size: 0.875rem;
+        margin-top: 12px;
+    }
+
+    .platform_card img {
+        max-width: 218px;
+        margin-left: 23px;
+    }
+
+    .value {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: 19px;
+        row-gap: 21px;
+        margin-top: 120px;
+    }
+
+    .value_info {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        text-align: start;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding-right: 25px;
+    }
+
+    .value_info>h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .value_info>a {
+        margin-top: 0;
+    }
+
+    .value_card {
+        grid-template-rows: 70px auto;
+        box-shadow: none;
+        border-radius: 30px;
+        min-height: 140px;
+        padding: 0 25px;
+    }
+
+    .value_card i {
+        font-size: 2.5rem;
+        position: relative;
+        left: -3px;
+        top: -3px;
+    }
+
+    .value_card>.value_icon_wrap {
+        justify-content: center;
+        align-self: center;
+        position: static;
+    }
+}
+/* for decktop  */
+
+@media only screen and (min-width: 1200px) {
+
+    .container {
+        padding: 0 60px;
     }
 
     /* header */
@@ -533,7 +747,6 @@ section.content {
 
     .value_info>a {
         margin-top: 0;
-        margin-bottom: 25px;
     }
 
     .value_card {
