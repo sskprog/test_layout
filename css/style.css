@@ -632,9 +632,9 @@ section.content {
         right: 15px;
         left: auto;
         top: 18px;
-
     }
 }
+
 /* for desktop */
 
 @media only screen and (min-width: 1200px) {
@@ -657,6 +657,5 @@ section.content {
         right: 15px;
         left: auto;
         top: 18px;
-
     }
 }
